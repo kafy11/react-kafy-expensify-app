@@ -11,7 +11,7 @@ export const startAddExpense = (expenseData = {}) => {
     return (dispatch, getState) => {
         const uid = getState().auth.uid;
         const {
-            description = '',
+            description = 'Expense',
             note = '',
             amount = 0,
             createdAt = 0
